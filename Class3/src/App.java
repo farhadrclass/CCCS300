@@ -9,5 +9,26 @@ public class App {
         System.out.println("Chicken costs " + priceChicken + " dollars per kg.");
         System.out.println("Chicken is cheaper than beef: " + isChickenCheaper);
 
+        // code to check args 3 is even or odd
+        evenCheck(args[2]);
+        evenCheckWay2(args[2]);
+
     }
+
+    private static void evenCheck(String str) {
+        int myVal = Integer.parseInt(str);
+        if (myVal % 2 == 0) {
+            System.out.println(myVal + " is an even number: true");
+        } else {
+            System.out.println(myVal + " is an even number: false");
+
+        }
+    }
+
+    private static void evenCheckWay2(String str) {
+        int myVal = Integer.parseInt(str);
+        System.out.println(myVal + " is an even number: " + (myVal % 2 == 0));
+
+    }
+
 }
