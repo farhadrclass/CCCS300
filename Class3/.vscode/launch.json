@@ -6,9 +6,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Current File",
+            "name": "Launch ProPlayer",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "ProPlayer",
+            "projectName": "Class3_ac08120",
+            "args": ["11","bob","3.5"]
         },
         {
             "type": "java",
@@ -16,7 +18,22 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "Class3_ac08120",
-            "args": ["7.71","16.93","5"]
+            "args": [
+                "7.71",
+                "16.93",
+                "5"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "args": [
+                "7.71",
+                "16.93",
+                "5"
+            ]
         }
     ]
 }
