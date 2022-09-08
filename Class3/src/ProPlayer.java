@@ -2,7 +2,15 @@ public class ProPlayer {
     public static void main(String[] args) throws Exception {
 
         // Variables an holders for args
+
+        /*
+         * BEFORE:  I had no idea
+         * Resourse :  wiki.com
+         * After:  I notice  can se this to do string to int and I modify it to the following code 
+         */
+
         int age = Integer.parseInt(args[0]);
+        
         String name = args[1];
         double m = Double.parseDouble(args[2]);
 
