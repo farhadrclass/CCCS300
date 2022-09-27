@@ -13,6 +13,7 @@ public class Game {
             }
             sum += userVal;
         }while(sum<100);
+         
 
         System.out.println("The sum is : "+sum);
 
