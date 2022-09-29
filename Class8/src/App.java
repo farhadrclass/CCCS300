@@ -6,27 +6,35 @@ public class App {
 
         print2DArray(num);
 
-        int[][] matrix = {{2,3}, {5,6}, {8,9}};
+        int[][] matrix = { { 2, 3 }, { }, { 8, 9 } };
+        // int[][] matrix = { { 2, 3 }, { 5, 6 }, { 8, 9 } };
 
-        int[] myCol= getColumn(matrix,1);
+        int[] myCol = getColumn(matrix, 0);
+        System.out.println("Printing the col");
         print1DArray(myCol);
 
     }
 
-    public static int[] getColumn(int[][] matrix,int col) {
-        
-        if (matrix ==null ){//col is larger than the matrix  size or matrix is empty
+    public static int[] getColumn(int[][] matrix, int col) {
+
+        if (matrix == null) {// col is larger than the matrix size or matrix is empty
             return null;
         }
-        if (matrix[0]==null){ //check if the matrix 2d is not null
-            return null; 
-        }
-        if( col >= matrix[0].length || col<0){//return an error since col is larger than columns size, we chececk for -ve value
+        if (matrix[0] == null) { // check if the matrix 2d is not null
             return null;
         }
-        int[] arr= new int[matrix.length];
-        for (int i = 0; i < matrix.length; i++) { //if it was not a matrix, can I check it here 
-            arr[i] = matrix[i][col];
+        if (col >= matrix[0].length || col < 0) {// return an error since col is larger than columns size, we chececk
+                                                 // for -ve value
+            return null;
+        }
+        int[] arr = new int[matrix.length];
+        for (int i = 0; i < matrix.length; i++) { // if it was not a matrix, can I check it here
+            // if not a matrix, you have to check, lloop by loop if the value is null
+            if (matrix[i].length <= col) {
+                arr[i] = -1;//desginer choice but find a way to tell me it it not populated
+            } else {
+                arr[i] = matrix[i][col];
+            }
         }
 
         return arr;
