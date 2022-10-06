@@ -54,4 +54,9 @@ public class Animal {
                 + "\nAnger level: " + this.anger + "\n-----------------");
 
     }
+    public String toString() {
+        return ("-----------------\nName:" + this.name + "\nColor: " + this.color + "\nThe age: " + this.age
+                + "\nAnger level: " + this.anger + "\n-----------------");
+
+    }
 }

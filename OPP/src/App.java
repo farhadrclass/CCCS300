@@ -27,7 +27,9 @@ public class App {
         System.out.println("Animal Counter "+ myCat.counter);
 
 
-
+        System.out.println(myCat);
+        System.out.println(myCat.toString());
+// 
 
 
 
